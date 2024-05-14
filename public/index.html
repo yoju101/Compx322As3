@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation</title>
+</head>
+<body>
+    <h1>API Documentation</h1>
+    
+    <h2>GET /events</h2>
+    <p>Get a list of all events in the database.</p>
+    <p> Example: <a href="http://localhost:3000/events/">http://localhost:3000/events/ </a></p>
+
+    <h2>POST /events</h2>
+    <p>Create a new event and save it to the database. </p>
+    <p> Example: <a href="http://localhost:3000/events/">http://localhost:3000/events/ </a></p>
+    <p>Change the drop down to POST and select "raw" and "JSON". Enter in to the test box the info of the new event you want to add.</p>
+
+    <h2>GET /events/{id}</h2>
+    <p>Get events by ID.</p>
+    <p> Example: <a href="http://localhost:3000/events/2 ">http://localhost:3000/events/2 </a></p>
+
+    <h2>GET /events/name/{name}</h2>
+    <p>Get events by Name.</p>
+    <p> Example: <a href="http://localhost:3000/events/name/Open Day - Hamilton">http://localhost:3000/events/name/Open Day - Hamilton</a> </p>
+
+    <h2>PUT /events/{id}</h2>
+    <p>Update event information by ID.</p>
+    <p> Example: <a href="http://localhost:3000/events/1">http://localhost:3000/events/1 </a></p>
+    <p>Change the drop down to PUT and select "raw" and "JSON". Enter in to the test box the info that you want to change.</p>
+
+    <h2>DELETE /events/delete/{id}</h2>
+    <p>Delete events by ID. (Remeber to change GET to DELETE in the drop down)</p>
+    <p> Example: <a href="http://localhost:3000/events/delete/4">http://localhost:3000/events/delete/3 </a></p>
+
+    <h2>DELETE /events/delete </h2>
+    <p> Delete all events from the database.</p>
+    <p> Example: <a href="http://localhost:3000/events/delete">http://localhost:3000/events/delete</a></p>
+
+    <h2> POSTMAN Test:</h2>
+    <p> I tested the link for updating a event by its id. In postman you have to change the drop <br>
+        down setting to PUT and in the URL I had "http://localhost:3000/events/1". It takes the id number that is passed in and <br>
+        updates the details that are passed in for that one. I selected "Raw" and "JSON", in the text field I entered the <br>
+        new description of the event and when i ran it it sucessfully updtaed in the system.  </p>
+</body>
+</html>
