@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation</title>
+</head>
+<body>
+    <h1>API Documentation</h1>
+    
+     <!-- Contains a description of each of the API functions (Get all) -->
+    <h2>GET /events</h2>
+    <p>Get a list of all events in the database.</p>
+    <p> Example: <a href="http://localhost:3000/events/">http://localhost:3000/events/ </a></p>
+
+     <!-- Contains a description of each of the API functions (Create new) -->
+    <h2>POST /events</h2>
+    <p>Create a new event and save it to the database. </p>
+    <p> Example: <a href="http://localhost:3000/events/">http://localhost:3000/events/ </a></p>
+    <p>Change the drop down to POST and select "raw" and "JSON". Enter in to the test box the info of the new event you want to add.</p>
+    <img src="Screenshot from 2024-05-14 12-52-10.png">
+    <p></p>
+    <img src="Screenshot from 2024-05-14 12-57-13.png">
+
+     <!-- Contains a description of each of the API functions (Get Id) -->
+    <h2>GET /events/{id}</h2>
+    <p>Get events by ID.</p>
+    <p> Example: <a href="http://localhost:3000/events/2 ">http://localhost:3000/events/2 </a></p>
+
+     <!-- Contains a description of each of the API functions (Get by Name) -->
+    <h2>GET /events/name/{name}</h2>
+    <p>Get events by Name.</p>
+    <p>Example: <a href="http://localhost:3000/events/name/Open Day - Hamilton">http://localhost:3000/events/name/Open Day - Hamilton</a> </p>
+
+     <!-- Contains a description of each of the API functions (Update Event by ID) -->
+    <h2>PUT /events/{id}</h2>
+    <p>Update event information by ID.</p>
+    <p>Example: <a href="http://localhost:3000/events/1">http://localhost:3000/events/1 </a></p>
+    <p>Change the drop down to PUT and select "raw" and "JSON". Enter in to the test box the info that you want to change.</p>
+    <img src="Screenshot from 2024-05-14 13-05-52.png"  >
+    <p></p>
+    <img src="Screenshot from 2024-05-14 13-10-52.png">
+
+     <!-- Contains a description of each of the API functions (Delete By ID) -->
+    <h2>DELETE /events/delete/{id}</h2>
+    <p>Delete events by ID. </p>
+    <p>Change GET to DELETE in the drop down</p>
+    <p>Example: <a href="http://localhost:3000/events/delete/4">http://localhost:3000/events/delete/3 </a></p>
+
+    <!-- Contains a description of each of the API functions (Delete all) -->
+    <h2>DELETE /events/delete </h2>
+    <p> Delete all events from the database.</p>
+    <p> Example: <a href="http://localhost:3000/events/delete">http://localhost:3000/events/delete</a></p>
+    <!-- A description of at least one of your Postman tests -->
+    <h2> POSTMAN Test:</h2>
+        <p>For my postman test I tested "deleting a event by its id". I changed the drop down to delete and entered into the url "http://localhost:3000/events/delete/6"<br>
+        and pressed "SEND". This was the table originally <br>
+        <img src="Screenshot from 2024-05-14 13-34-34.png"><br>
+        <img src="Screenshot from 2024-05-14 13-36-41.png"><br>
+        <img src="Screenshot from 2024-05-14 13-37-58.png"><br>
+        and this is the table after. This show me that deleting an event by its ID works as expected.<br>
+        </p>
+</body>
+</html>
